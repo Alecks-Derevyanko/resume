@@ -9,6 +9,13 @@ body {
   font-family: var(--main-font);
   font-style: normal;
 }
+.logo-blue {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
 .list {
   list-style: none;
 }
