@@ -10,6 +10,7 @@ body {
   font-style: normal;
 }
 .logo-blue {
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -100,6 +101,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: #212121;
 }
 .contact-list-link {
   font-weight: 400;
