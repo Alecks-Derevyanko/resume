@@ -110,7 +110,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #ffffff;
 }
 .contact-list-link {
   font-weight: 400;
