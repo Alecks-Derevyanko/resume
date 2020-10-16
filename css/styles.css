@@ -60,7 +60,9 @@ body {
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .header-tel-link:hover,
-.header-tel-link:focus {
+.header-tel-link:focus,
+.our-but:hover,
+.our-but:focus {
   color: var(--accent-color);
 }
 .modal-btn {
