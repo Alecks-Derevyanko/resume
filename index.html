@@ -1,196 +1,168 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!--HEADER-->
-    <header class="header">
-      <nav class="navigation">
-        <a class="logo link" href="./index.html" lang="en">
-          <span class="logo-blue">Web</span>Studio</a
-        >
-        <ul class="navigation-list list">
-          <li class="navigation-list-item">
-            <a class="navigation-list-link-activ link" href="">Студия</a>
+   <!-- main container-->
+   <div class="wrapper">
+    <aside class="sidebar">
+      <img class="my-photo" src="./img/photo.JPG" alt="My photo">
+
+      <!--Contacts container-->
+      <div class="contacts-container">
+        <h3 class="contacts-title">Contacts</h3>
+        <div>
+           <span class="contacts-link-type">C:</span> 
+           <a class="contacts-link" href="tel:380634277417">+38 063 427 74 17</a>
+        </div>
+        <div>
+          <span class="contacts-link-type">E:</span>  
+           <a class="contacts-link" href="mailto:andrey.brnr@gmail.com">andrey.brnr@gmail.com</a>   
+        </div>
+      </div>
+         <!--Tech  Skills container-->
+      <div class="tech-skills-container">
+         <h3 class="tech-skills-title">Tech Skills</h3> 
+           <ul>
+             <li class="tech-skills-item">
+               <span class="tech-skills-text">HTML5</span>
+              </li>
+             <li class="tech-skills-item">
+              <span class="tech-skills-text">CSS3</span>
+            </li>
+             <li class="tech-skills-item">
+              <span class="tech-skills-text">GIT</span>
+            </li>
+             <li class="tech-skills-item">
+              <span class="tech-skills-text">WebPack</span>
+            </li>
+             <li class="tech-skills-item">
+              <span class="tech-skills-text">JavaScript</span>
+            </li>
+             <li class="tech-skills-item">
+              <span class="tech-skills-text">React.js</span>
+            </li>
+             <li class="tech-skills-item">
+              <span class="tech-skills-text">Node.js</span>
+            </li>
+          </ul>
+      </div>
+
+ <!--Soft  Skills container-->
+       <div class="soft-skills-container">
+    <h3 class="soft-skills-title">Soft Skills</h3> 
+     <ul>
+       <li class="soft-skills-item">
+         <span class="soft-skills-text">Scrum</span>
+      </li>
+       <li class="soft-skills-item">
+         <span class="soft-skills-text">Agile</span>
+      </li>
+       <li class="soft-skills-item">
+         <span class="soft-skills-text">GTD</span>
+      </li>
+       <li class="soft-skills-item">
+         <span class="soft-skills-text">Teamwork</span>
+      </li>
+    </ul>
+       </div>
+
+    </aside>
+
+    <!-- about me container-->
+    <div class="about-me-container">
+      <!-- about me main info -->
+      <div class="info-container">
+      <h2 class="profession">Front-End Developer</h2>
+      <h1 class="name">Andrey Babenko</h1>
+      <p class="descrip">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+        lacus vel facilisis.
+      </p>
+    </div>
+
+      <!-- project container-->
+      <div class="projects-container">
+        <h3 class="about-me-title">Projects</h3>
+        <ol>    
+          <li class="projects-item">
+            <a class="projects-link" href="https://lovecamp.allinsol.com/">https://lovecamp.allinsol.com</a>
+            <span class="dots">...............................</span>
+            <span><b>[</b> <span class="tech-name">JHTML5, CSS3</span> <b>]</b></span>
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link link" href="./portfolio.html"
-              >Портфолио</a
-            >
+          
+          <li class="projects-item">
+            <a class="projects-link" href="https://cryptohub.goit.ua">https://cryptohub.goit.ua/</a>
+            <span class="dots">......................................</span>
+            <span><b>[</b> <span class="tech-name">JavaScript</span> <b>]</b></span>
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link link" href="">Контакты</a>
+          
+          <li class="projects-item">
+          <a class="projects-link" href="https://kidslike.goit.co.ua/">https://kidslike.goit.co.ua/</a>
+          <span class="dots">......................................</span>
+          <span><b>[</b> <span class="tech-name">JReact.js, Node.js</span> <b>]</b></span>
           </li>
-        </ul>
-      </nav>
-      <address class="address">
-        <ul class="navigation-list list">
-          <li>
-            <a class="header-tel-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header-tel-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </header>
-    <main>
-      <section>
-        <h1 class="titel">Эффективные решения для вашего бизнеса</h1>
-        <button class="modal-btn" type="button">Заказать услугу</button>
-      </section>
-      <section>
-        <!-- <h2>Профессионализм</h2> -->
-        <ul class="list">
-          <li>
-            <h3 class="professionalism">Внимание к деталям</h3>
-            <p class="professionalism-list">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="professionalism">Пунктуальность</h3>
-            <p class="professionalism-list">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="professionalism">Планирование</h3>
-            <p class="professionalism-list">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="professionalism">Современные технологии</h3>
-            <p class="professionalism-list">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="h2">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/what-we-do/box1.jpg"
-              alt="Разработчик верстает сайт"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/what-we-do/box2.jpg"
-              alt="Разработчик оптимизирует сайт под мобильные устройства"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/what-we-do/box3.jpg"
-              alt="Дизайнер подбирает цветовую гамму"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="h2">Наша команда</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/Our-team/igor.jpg"
-              alt="Игорь Демьяненко"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-employees">Игорь Демьяненко</h3>
-            <p class="position" lang="en">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images/Our-team/olga.jpg"
-              alt="Ольга Репина"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-employees">Ольга Репина</h3>
-            <p class="position" lang="en">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images/Our-team/nicolai.jpg"
-              alt="Николай Тарасов"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-employees">Николай Тарасов</h3>
-            <p class="position" lang="en">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/Our-team/mihail.jpg"
-              alt="Михаил Ермаков"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-employees">Михаил Ермаков</h3>
-            <p class="position" lang="en">UI Designer</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <a class="logo-white link" href="./index.html" lang="en">
-        <span class="logo-blue">Web</span> Studio</a
-      >
-      <address class="address">
-        <ul class="list">
-          <li>
-            <a
-              class="contact-list-link-map link"
-              href="https://goo.gl/maps/pVzpR7jKzoyMF15a7"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </li>
-          <li>
-            <a class="contact-list-link link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-list-link link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </footer>
-  </body>
+        </ol>
+      </div>
+
+      <!-- work experiens-->
+      <div>
+        <h3 class="about-me-title">Work Experience</h3>
+
+        <!--company1-->
+        <div>
+          <h4 class="profession-title">Front-End Developer <span class="profession-company">Freelance</span></h4>
+          <span class="profession-time">September 2019 - up to now <span class="profession-divider">|</span> Ukraine</span>
+          <ul class="profession-duties">         
+            <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+            <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li class="profession-duties-item">Risus commodo viverra maecenas. </li>
+            <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+          </ul>
+        </div>
+
+        <!--company2-->
+        <div>
+          <h4 class="profession-title">Manager <span class="profession-company">Roga & Kopyta New</span> </h4>
+          <span class="profession-time">March 2015 - October 2018 <span class="profession-divider">|</span> Ukraine</span>
+          <ul class="profession-duties">         
+            <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. </li>
+            <li class="profession-duties-item">Quis ipsum suspendisse ultrices gravida.</li>
+            <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
+          </ul>
+        </div>
+
+        <!--company3-->
+        <div>
+             <h4 class="profession-title">Manager <span class="profession-company">Roga & Kopyta LLC</span> </h4>
+            <span class="profession-time">June 2014 - February 2015 <span class="profession-divider">|</span> Ukraine</span>
+           <ul class="profession-duties">         
+             <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+             <li class="profession-duties-item">Quis ipsum suspendisse ultrices gravida.</li>
+             <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
+           </ul>
+        </div>
+      </div>
+
+      <!--Education-->
+      <div>
+         <h3 class="about-me-title">Education</h3>
+         <h4 class="education-company">Kharkiv National University of Radioelectronics</h4>
+         <h4 class="education-profession">Management</h4>
+         <span class="education-time">Septermber 2009 - June 2014 <span class="profession-divider">|</span> Ukraine</span>
+      </div>
+
+    </div>
+  </div>
+</body>
 </html>
+
+
+
